@@ -1,0 +1,11 @@
+source venv/bin/activate #ative o ambiente virtual
+
+export FLASK_APP=/vagrant_data/hello_flask/hello_flask.py #passe o caminho do arquivo
+export FLASK_DEBUG=1
+
+flask run 
+
+curl -L http://127.0.0.1:5000/ #abra outro terminal na maquina e teste o servidor
+
+
+deactivate #sair do ambiente virtual
